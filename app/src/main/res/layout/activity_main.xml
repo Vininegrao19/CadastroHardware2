@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Campo: Tipo (HD, RAM, etc) -->
+    <EditText
+        android:id="@+id/etTipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tipo da peça"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo: Marca -->
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintTop_toBottomOf="@id/etTipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Campo: Capacidade -->
+    <EditText
+        android:id="@+id/etCapacidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Capacidade (ex: 500GB, 16GB)"
+        app:layout_constraintTop_toBottomOf="@id/etMarca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Campo: Modelo -->
+    <EditText
+        android:id="@+id/etModelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        app:layout_constraintTop_toBottomOf="@id/etCapacidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botão Salvar -->
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        app:layout_constraintTop_toBottomOf="@id/etModelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botão Ver Peças -->
+    <Button
+        android:id="@+id/btnVerPecas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Peças"
+        app:layout_constraintTop_toBottomOf="@id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
